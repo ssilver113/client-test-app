@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<databaseChangeLog
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+        xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+        xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-3.1.xsd
+    http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <changeSet author="admin" id="6">
+        <insert tableName="client">
+            <column name="user_id" value="1" />
+            <column name="first_name" value="John" />
+            <column name="last_name" value="Smith" />
+            <column name="username" value="User1" />
+            <column name="email" value="john@email.com" />
+            <column name="address" value="1234 Main St" />
+            <column name="country_id" value="1" />
+        </insert>
+        <insert tableName="client">
+            <column name="user_id" value="1" />
+            <column name="first_name" value="Bob" />
+            <column name="last_name" value="Smith" />
+            <column name="username" value="User2" />
+            <column name="email" value="bob@email.com" />
+            <column name="address" value="1273 Rockefeller Street" />
+            <column name="country_id" value="2" />
+        </insert>
+        <insert tableName="client">
+            <column name="user_id" value="2" />
+            <column name="first_name" value="Billy" />
+            <column name="last_name" value="Smith" />
+            <column name="username" value="User3" />
+            <column name="address" value="Nowhere" />
+            <column name="country_id" value="3" />
+        </insert>
+    </changeSet>
+</databaseChangeLog>
